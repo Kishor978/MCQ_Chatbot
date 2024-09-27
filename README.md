@@ -1,2 +1,2 @@
 # MCQ_Chatbot
-MCQ generating Chatbot using Gemini Pro
+MCQ generating Chatbot using Gemini Pro API
