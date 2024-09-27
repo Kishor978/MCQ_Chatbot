@@ -26,3 +26,5 @@ if submit:
     response=get_gemini_response(input)
     st.subheader("Response:")
     st.write(response)
+    
+    
