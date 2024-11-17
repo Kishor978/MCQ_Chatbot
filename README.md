@@ -68,4 +68,5 @@ This project is a Flask-based web application that generates multiple-choice que
 
 Watch the demo video to see how the Gemini Chatbot - MCQ Generator works:
 
-[![Watch the video]()]()
+
+[![Watch the video](https://github.com/Kishor978/MCQ_Chatbot/blob/main/MCQ-genetator.mp4)](https://github.com/Kishor978/MCQ_Chatbot/blob/main/MCQ-genetator.mp4)
