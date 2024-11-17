@@ -23,7 +23,7 @@ st.header("Gemini Chatbot")
 grade = st.text_input("Enter the grade level (e.g., 5th grade):", "5th grade")
 subject = st.text_input("Enter the subject (e.g., Mathematics):", "Mathematics")
 subtopic = st.text_input("Enter the subtopic (e.g., Algebra):", "Algebra")
-num_questions = st.number_input("Enter the number of questions (e.g., 5):", min_value=1, max_value=20, value=5)
+num_questions = st.number_input("Enter the number of questions (e.g., 5):", min_value=1, max_value=10, value=5)
 
 submit=st.button("Generate MCQs")
 

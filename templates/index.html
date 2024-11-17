@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chatbot - MCQ Generator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gemini Chatbot - MCQ Generator</h1>
+
+        <form method="POST" action="/">
+            <label for="grade">Enter the grade level (e.g., 5th grade):</label><br>
+            <input type="text" id="grade" name="grade" value="5th grade"><br><br>
+
+            <label for="subject">Enter the subject (e.g., Mathematics):</label><br>
+            <input type="text" id="subject" name="subject" value="Mathematics"><br><br>
+
+            <label for="subtopic">Enter the subtopic (e.g., Algebra):</label><br>
+            <input type="text" id="subtopic" name="subtopic" value="Algebra"><br><br>
+
+            <label for="num_questions">Enter the number of questions (1 to 10):</label><br>
+            <input type="number" id="num_questions" name="num_questions" min="1" max="10" value="5"><br><br>
+
+            <input type="submit" value="Generate MCQs">
+        </form>
+
+        {% if mcq %}
+        <div class="mcq-container">
+            <h2>Generated MCQs (JSON Format):</h2>
+            <pre>{{ mcq }}</pre>  <!-- Preformatted text for JSON output -->
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
